@@ -31,10 +31,7 @@ export default [
       ]
     }
   ]),
-  {
-    path: '*',
-    redirect: '/'
-  }
+  {path: '*', component: () => import('@/pages/Error/NotFound')}
 ]
 
 /**
