@@ -61,7 +61,7 @@ export const actions = {
       commit(types.FETCH_USER_FAILURE)
     }
   },
-  // update the user infrmation on save
+  // update the user information on save
   updateUser ({ commit }, payload) {
     commit(types.UPDATE_USER, payload)
   },
@@ -69,7 +69,7 @@ export const actions = {
   async logout ({ commit }) {
     try {
       // TODO: Connect to API to log user out and destroy the API key geerated
-      await axios.post('/api-to-logout-user')
+      await axios.post('/api/auth/signout')
     } catch (e) { }
 
     commit(types.LOGOUT)

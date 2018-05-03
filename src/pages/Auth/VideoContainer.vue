@@ -1,5 +1,5 @@
 <template>
-  <div class="login-promo text-white position-relative">
+  <div class="login-promo text-white position-relative" v-bind:style="styles">
       <div class="login-promo-content text-center">
           <a href="#" class="mb-4 d-block">
               <img class="pr-3" src="@/assets/img/logo.png" alt="iBorrow" style="max-height:100px;">
@@ -13,6 +13,18 @@
 <script>
 export default {
   name: 'authentication-video-container',
-  components: {}
+  props: {
+    minheight: {
+      type: String,
+      default: '500px'
+    }
+  },
+  computed: {
+    styles () {
+      return {
+        minHeight: this.minheight
+      }
+    }
+  }
 }
 </script>

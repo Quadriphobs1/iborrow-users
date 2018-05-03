@@ -6,6 +6,9 @@ import router from './router'
 
 // set up extend layout option for the vue
 import { VueExtendLayout, layout } from './layouts/index'
+import VeeValidate from 'vee-validate'
+// Expose all the resources/plugins
+import './resources'
 
 // Import styles
 import 'bootstrap/dist/css/bootstrap.css'
@@ -22,6 +25,7 @@ require('bootstrap')
 Vue.config.productionTip = false
 // register the vue-extend-layout-option
 Vue.use(VueExtendLayout)
+Vue.use(VeeValidate)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

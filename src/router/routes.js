@@ -20,7 +20,8 @@ export default [
         { path: 'password/forgot', name: 'auth.password.forgot', component: require('@/pages/Auth/Password/Forgot').default, meta: { layout: 'auth' } },
         { path: 'password/reset/:token', name: 'auth.password.reset', component: require('@/pages/Auth/Password/Reset').default, meta: { layout: 'auth' } }
       ]
-    }
+    },
+    { path: '/welcome/:userId', name: 'registered.welcome', component: require('@/pages/Auth/Confirm/Welcome').default, meta: { layout: 'register' } }
   ]),
   ...middleware('auth', [
     { path: '/home',
@@ -31,6 +32,7 @@ export default [
       ]
     }
   ]),
+  { path: '/error/registration', name: 'error.registration', component: () => import('@/pages/Error/RegistrationError') },
   {path: '*', component: () => import('@/pages/Error/NotFound')}
 ]
 
