@@ -38,10 +38,17 @@ export default {
     * Parameters [$store.getters]
      */
     checkUserStatus () {
-      if (!this.$store.getters['auth/check']) {
+      if (!this.$store.getters['auth/token']) {
         this.$router.push({ name: 'auth.login' })
       } else {
-        this.$router.push({ name: 'home' })
+        const roles = this.$store.getters['auth/roles']
+        if (roles === 'investors') {
+          this.$router.push({ name: 'investors.home' })
+        } else if (roles === 'borrowers') {
+          this.$router.push({ name: 'borrowers.home' })
+        } else {
+          this.$router.push({ name: 'auth.login' })
+        }
       }
     }
   },

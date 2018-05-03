@@ -23,12 +23,22 @@ export default [
     },
     { path: '/welcome/:userId', name: 'registered.welcome', component: require('@/pages/Auth/Confirm/Welcome').default, meta: { layout: 'register' } }
   ]),
-  ...middleware('auth', [
-    { path: '/home',
+  ...middleware('investors', [
+    { path: '/in',
+      component: () => import('@/pages/Investors/Template'),
+      children: [
+        { path: '', redirect: { name: 'investors.home' } },
+        { path: 'dashboard', name: 'investors.home', component: require('@/pages/Home/Page').default, meta: { layout: 'dashboard' } },
+        { path: 'welcome', name: 'investors.main', component: require('@/pages/Main/Page').default }
+      ]
+    }
+  ]),
+  ...middleware('borrowers', [
+    { path: '/br',
       component: () => import('@/pages/Auth/Template'),
       children: [
-        { path: '', redirect: { name: 'home' } },
-        { path: 'welcome', name: 'home', component: require('@/pages/Home/Page').default }
+        { path: '', redirect: { name: 'borrowers.home' } },
+        { path: 'welcome', name: 'borrowers.home', component: require('@/pages/Home/Page').default }
       ]
     }
   ]),

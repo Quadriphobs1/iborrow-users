@@ -1,8 +1,7 @@
 import store from '@/store'
-// TODO: Change middleware to check the user type and redirect the user to its own page routes,
-// The middleware will check if the logged in user is a lender or a borrower
+// The middleware will check if the user is logged in
 export default async (to, from, next) => {
-  if (!store.getters['auth/check']) {
+  if (!store.getters['auth/token']) {
     next({ name: 'auth.login' })
   } else {
     next()
