@@ -664,7 +664,7 @@ left nav
 
 @media (min-width: 992px) {
   #mainNav.fixed-top .left-side-nav {
-      height: 100vh;
+      height: calc(100vh - 143px);
       border-right: 1px solid #e5e8eb;
       box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .05);
   }
@@ -687,7 +687,7 @@ left nav
       overflow-x: hidden;
       overflow-y: auto;
               flex-direction: column;
-      margin-top: calc(100vh - 53px);
+      margin-top: calc(100vh - 73px);
 
       -webkit-box-direction: normal;
       -webkit-box-orient: vertical;

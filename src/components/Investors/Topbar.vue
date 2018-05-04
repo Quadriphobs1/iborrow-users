@@ -16,6 +16,7 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <sidebar></sidebar>
+            <foot-navigation></foot-navigation>
             <portal-navigation></portal-navigation>
             <top-navigation></top-navigation>
         </div>
@@ -27,12 +28,14 @@
   import Sidebar from './Sidebar'
   import TopNavigation from './TopNavigation'
   import PortalNavigation from './PortalNavigation'
+  import FootNavigation from './FootNavigation'
   export default {
     name: 'investors-topbar',
     components: {
       Sidebar,
       TopNavigation,
-      PortalNavigation
+      PortalNavigation,
+      FootNavigation
     }
   }
 </script>

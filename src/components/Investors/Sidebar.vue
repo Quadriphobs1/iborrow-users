@@ -18,13 +18,27 @@
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Trending">
           <a class="nav-link " >
-              <i class="vl_dashboard"></i>
+              <i class="vl_fire-flame"></i>
               <span class="nav-link-text">Trending <span class="badge badge-danger">NEW</span></span>
           </a>
       </li>
+
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Borrowers">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" data-target="#borrowers">
+              <i class="vl_money"></i>
+              <span class="nav-link-text">Borrowers </span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="borrowers" data-parent="#accordion">
+              <a class="dropdown-item" href="#">Featured Request</a>
+              <a class="dropdown-item" href="#">Investment Requests</a>
+              <a class="dropdown-item" href="#">Active Transactions</a>
+              <a class="dropdown-item" href="#">My Investments</a>
+              <a class="dropdown-item" href="#">All Borrowers</a>
+          </ul>
+      </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Investments">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" data-target="#investment">
-              <i class="vl_globe4"></i>
+              <i class="vl_rocket1"></i>
               <span class="nav-link-text">Investments </span>
           </a>
           <ul class="sidenav-second-level collapse" id="investment" data-parent="#accordion">
@@ -47,14 +61,30 @@
               <a class="dropdown-item" href="#">All Opportunity</a>
           </ul>
       </li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Business Oppotunity">
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Consultations">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" data-target="#cosultation">
-              <i class="vl_globe4"></i>
+              <i class="vl_question"></i>
               <span class="nav-link-text">Consultations </span>
           </a>
           <ul class="sidenav-second-level collapse" id="cosultation" data-parent="#accordion">
               <a class="dropdown-item" href="#">New consultation</a>
               <a class="dropdown-item" href="#">My Consultations</a>
+          </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Transactions">
+          <a class="nav-link " >
+              <i class="vl_money-bag"></i>
+              <span class="nav-link-text">Transactions</span>
+          </a>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" data-target="#messages">
+              <i class="vl_inbox"></i>
+              <span class="nav-link-text">Messages </span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="messages" data-parent="#accordion">
+              <a class="dropdown-item" href="#">Inbox</a>
+              <a class="dropdown-item" href="#">Sent</a>
           </ul>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Notifications">
