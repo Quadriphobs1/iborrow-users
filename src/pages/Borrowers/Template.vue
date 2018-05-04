@@ -5,9 +5,9 @@
 </div>
 </template>
 <script>
-import ActivateNotification from '@/components/Investors/ActivateNotification'
+import ActivateNotification from '@/components/Borrowers/ActivateNotification'
 export default {
-  name: 'investors-dashboard',
+  name: 'borrowers-dashboard',
   components: {
     ActivateNotification
   },

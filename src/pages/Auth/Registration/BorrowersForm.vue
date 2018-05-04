@@ -28,7 +28,7 @@
             <label class="custom-control-label" for="customControlInline" style="padding-left: 25px">I agree to the terms</label>
             <span class="invalid-feedback" v-show="errors.has('terms')">You forgot to check the box.</span>
         </span>
-        <button type="submit" class="btn btn-purple float-right "><i class="fa fa fa-circle-o-notch fa-spin mr-2" v-if="loading"></i>Register</button>
+        <button type="submit" class="btn btn-purple float-right " :disabled="loading"><i class="fa fa fa-circle-o-notch fa-spin mr-2" v-if="loading"></i>Register</button>
     </div>
 
     <div class="form-divider col-12"></div>

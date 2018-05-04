@@ -20,6 +20,7 @@ axios.interceptors.request.use(request => {
 async function logout () {
   try {
     await store.dispatch('auth/logout')
+    this.$toastr.i('Your authentication token has expired, please login again', 'Account Logged Out')
     router.push({ name: 'login' })
   } catch (e) {
     console.log(e)
@@ -31,11 +32,10 @@ axios.interceptors.response.use(response => response, error => {
   const { status } = error.response
 
   if (status >= 500) {
-    console.log(status)
+    this.$toastr.e(error.data.message)
   }
 
   if (status === 401 && store.getters['auth/check']) {
-    console.log('loggin user out now')
     logout()
   }
 

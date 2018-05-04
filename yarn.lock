@@ -567,6 +567,10 @@ babel-helper-replace-supers@^6.24.1:
     babel-traverse "^6.24.1"
     babel-types "^6.24.1"
 
+babel-helper-vue-jsx-merge-props@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz#22aebd3b33902328e513293a8e4992b384f9f1b6"
+
 babel-helpers@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-helpers/-/babel-helpers-6.24.1.tgz#3471de9caec388e5c850e597e58a26ddf37602b2"
@@ -7167,6 +7171,12 @@ void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
+vue-content-loader@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vue-content-loader/-/vue-content-loader-0.2.1.tgz#0eb332e2a72643d57fb209d72d6526573b191f5a"
+  dependencies:
+    babel-helper-vue-jsx-merge-props "^2.0.3"
+
 vue-extend-layout@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vue-extend-layout/-/vue-extend-layout-1.0.2.tgz#8ab2e06b3f28bebb2c807855acc2e48a51952254"
@@ -7224,6 +7234,10 @@ vue-template-compiler@^2.5.2:
 vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
+
+vue-toastr@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/vue-toastr/-/vue-toastr-2.0.14.tgz#c9e9a105eea1a8d14a4dfcbeb6c6e92510646a88"
 
 vue@^2.4.4, vue@^2.5.2:
   version "2.5.16"

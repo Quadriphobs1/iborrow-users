@@ -71,13 +71,11 @@ export const actions = {
   updateUser ({ commit }, payload) {
     commit(types.UPDATE_USER, payload)
   },
-  // aych to loged out user
+  // asynch to loged out user
   async logout ({ commit }) {
     try {
-      // TODO: Connect to API to log user out and destroy the API key geerated
       await axios.post('/api/auth/signout')
     } catch (e) { }
-
     commit(types.LOGOUT)
   }
 }

@@ -28,17 +28,18 @@ export default [
       component: () => import('@/pages/Investors/Template'),
       children: [
         { path: '', redirect: { name: 'investors.home' } },
-        { path: 'dashboard', name: 'investors.home', component: require('@/pages/Home/Page').default, meta: { layout: 'dashboard' } },
+        { path: 'dashboard', name: 'investors.home', component: require('@/pages/Home/Page').default, meta: { layout: 'investors' } },
         { path: 'welcome', name: 'investors.main', component: require('@/pages/Main/Page').default }
       ]
     }
   ]),
   ...middleware('borrowers', [
     { path: '/br',
-      component: () => import('@/pages/Auth/Template'),
+      component: () => import('@/pages/Borrowers/Template'),
       children: [
         { path: '', redirect: { name: 'borrowers.home' } },
-        { path: 'welcome', name: 'borrowers.home', component: require('@/pages/Home/Page').default }
+        { path: 'dashboard', name: 'borrowers.home', component: require('@/pages/Home/Page').default, meta: { layout: 'borrowers' } },
+        { path: 'welcome', name: 'borrowers.main', component: require('@/pages/Main/Page').default }
       ]
     }
   ]),

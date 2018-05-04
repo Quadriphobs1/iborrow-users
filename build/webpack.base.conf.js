@@ -81,7 +81,8 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
-      validate: 'jquery-validation'
+      validate: 'jquery-validation',
+      mCustomScrollbar: 'malihu-custom-scrollbar-plugin'
     }),
     new ExtractTextPlugin({ filename: 'common.[chunkhash].css' })
   ]

@@ -2,16 +2,21 @@
   <transition name="page" mode="out-in">
     <div id="app">
       <loading ref="loading"></loading>
-      <router-view/>
-      <p>dashboard</p>
+      <topbar></topbar>
+      <div class="content-wrapper cont-wrapper">
+        <router-view/>
+        <main-footer></main-footer>
+      </div>
     </div>
   </transition>
 </template>
 
 <script>
 import Loading from '@/components/Loading'
+import Topbar from '@/components/Investors/Topbar'
+import MainFooter from '@/components/MainFooter'
 export default {
-  name: 'dashboard',
+  name: 'investors',
 
   data: () => ({
   }),
@@ -20,12 +25,14 @@ export default {
       title: 'iBorrow',
       titleTemplate: '%s · iBorrow',
       htmlAttrs: { lang: 'en', dir: 'ltr' },
-      bodyAttrs: { class: 'no-transition' },
+      bodyAttrs: { class: 'fixed-nav' },
       noscript: [ { innerHTML: 'This website requires JavaScript.' } ]
     }
   },
   components: {
-    Loading
+    Loading,
+    Topbar,
+    MainFooter
   },
   mounted () {
     this.$loading = this.$refs.loading
