@@ -15,9 +15,6 @@
 import Loading from '@/components/Loading'
 export default {
   name: 'auth',
-
-  data: () => ({
-  }),
   metaInfo () {
     return {
       title: 'Authentication',

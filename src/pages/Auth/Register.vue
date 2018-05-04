@@ -18,7 +18,7 @@
               <span class="c-hero__circle7 c-hero__circle--small"></span>
               <span class="c-hero__circle8 c-hero__circle--small"></span>
             </div>
-            
+
           </div>
           <div class="col-md-7">
             <h1>iBorrow</h1>
@@ -65,6 +65,11 @@ export default {
   components: {
     MiniCaption,
     Leader
+  },
+  metaInfo () {
+    return {
+      title: 'Create Account '
+    }
   }
 }
 </script>

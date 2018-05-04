@@ -16,6 +16,11 @@ export default {
   components: {
     VideoContainer,
     LoginForm
+  },
+  metaInfo () {
+    return {
+      title: 'Login to your account'
+    }
   }
 }
 </script>

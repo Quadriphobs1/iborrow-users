@@ -16,7 +16,7 @@
       </div>
 
       <div class="form-group clearfix">
-          <a href="#" class="float-left forgot-link my-2">Forgot Password ?</a>
+          <router-link :to="{ name: 'auth.password.forgot' }" tags="a" class="float-left forgot-link my-2">Forgot Password ?</router-link>
           <button type="submit" :disabled="loading" class="btn btn-purple float-right" > <i class="fa fa fa-circle-o-notch fa-spin mr-2" v-if="loading"></i>LOGIN</button>
       </div>
 
@@ -42,8 +42,7 @@ export default {
     }
   },
   methods: {
-    login (e) {
-      e.preventDefault()
+    login () {
       this.$validator.validateAll().then((result) => {
         this.wasValidated = true
         this.loading = true
