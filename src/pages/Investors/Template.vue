@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid">
+<div >
   <activate-notification v-if="accountActivated" :name="name"></activate-notification>
   <router-view></router-view>
 </div>

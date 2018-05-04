@@ -29,7 +29,13 @@ export default [
       children: [
         { path: '', redirect: { name: 'investors.home' } },
         { path: 'dashboard', name: 'investors.home', component: require('@/pages/Home/Page').default, meta: { layout: 'investors' } },
-        { path: 'welcome', name: 'investors.main', component: require('@/pages/Main/Page').default }
+        { path: 'welcome', name: 'investors.main', component: require('@/pages/Main/Page').default },
+        { path: 'profile',
+          component: () => import('@/pages/Investors/Profile/Template'),
+          children: [
+            { path: '', name: 'investors.profile', component: require('@/pages/Investors/Profile/ProfilePage').default, meta: { layout: 'investors' } }
+          ]
+        }
       ]
     }
   ]),

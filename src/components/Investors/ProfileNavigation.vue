@@ -4,7 +4,7 @@
           <profile-image></profile-image>
       </a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userNav">
-          <a class="dropdown-item" href="#">My Profile</a>
+          <router-link :to="{ name: 'investors.profile' }" class="dropdown-item" tags="a">My Profile</router-link>
           <a class="dropdown-item" href="#">Account Settings</a>
           <a class="dropdown-item" href="#">Inbox <span class="badge badge-primary">3</span></a>
           <div class="dropdown-divider"></div>

@@ -1,4 +1,5 @@
 <template>
+<div class="container-fluid">
   <div class="row">
     <div class="col-12">
       <div class="alert alert-warning" role="alert">
@@ -10,6 +11,7 @@
       <activate-account-modal></activate-account-modal>
     </div>
   </div>
+</div>
 </template>
 
 <script>
