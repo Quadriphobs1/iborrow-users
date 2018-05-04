@@ -10,10 +10,10 @@
               Business Opportunity
           </a>
           <div class="dropdown-menu" aria-labelledby="reportNav">
-              <a class="dropdown-item" href="#">Recent Opportunities</a>
-              <a class="dropdown-item" href="#">All Opportunty</a>
+              <a class="dropdown-item" href="#">Trending</a>
               <a class="dropdown-item" href="#">Saved Opportunity</a>
               <a class="dropdown-item" href="#">My Requests</a>
+              <a class="dropdown-item" href="#">Create Opportunity</a>
           </div>
       </li>
       <li class="nav-item dropdown">

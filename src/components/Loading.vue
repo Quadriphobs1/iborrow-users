@@ -10,7 +10,6 @@
 <script>
 // https://github.com/nuxt/nuxt.js/blob/master/lib/app/components/nuxt-loading.vue
 import Vue from 'vue'
-// TODO: Change the loader colour to purple of the logo colour
 export default {
   data: () => ({
     percent: 0,
@@ -18,7 +17,7 @@ export default {
     canSuccess: true,
     duration: 3000,
     height: '2px',
-    color: '#06d6a0',
+    color: '#652392',
     failedColor: '#fd383c'
   }),
 
