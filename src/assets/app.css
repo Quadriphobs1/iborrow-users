@@ -4181,3 +4181,8 @@ div.spinner-container {
   height: 20vh;
   padding: 15px;
 }
+
+.profile-image-loader svg {
+  height: 85px;
+  width:85px;
+}
