@@ -7171,6 +7171,10 @@ void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
+vue-auth-image@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vue-auth-image/-/vue-auth-image-0.0.2.tgz#d0e76435822a71c24e36ec118e44066b57048a53"
+
 vue-content-loader@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/vue-content-loader/-/vue-content-loader-0.2.1.tgz#0eb332e2a72643d57fb209d72d6526573b191f5a"

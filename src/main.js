@@ -9,6 +9,7 @@ import { VueExtendLayout, layout } from './layouts/index'
 import VeeValidate from 'vee-validate'
 // Import Vue Tastr plugin for notification
 import Toastr from 'vue-toastr'
+import VueAuthImage from 'vue-auth-image'
 
 // Expose all the resources/plugins
 import './resources'
@@ -27,7 +28,7 @@ import '@/assets/app.css'
 require('bootstrap')
 
 Vue.config.productionTip = false
-// register the vue-extend-layout-option
+Vue.use(VueAuthImage)
 Vue.use(VueExtendLayout)
 Vue.use(VeeValidate)
 Vue.use(Toastr)
