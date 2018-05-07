@@ -28,7 +28,7 @@
   import Sidebar from './Sidebar'
   import TopNavigation from './TopNavigation'
   import PortalNavigation from './PortalNavigation'
-  import FootNavigation from './FootNavigation'
+  import FootNavigation from '../FootNavigation'
   export default {
     name: 'investors-topbar',
     components: {
