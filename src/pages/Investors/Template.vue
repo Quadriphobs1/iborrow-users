@@ -5,7 +5,7 @@
 </div>
 </template>
 <script>
-import ActivateNotification from '@/components/Investors/ActivateNotification'
+import ActivateNotification from '@/components/ActivateNotification'
 export default {
   name: 'investors-dashboard',
   components: {

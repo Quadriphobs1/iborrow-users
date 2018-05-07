@@ -2,7 +2,7 @@
   <ul class="navbar-nav sidenav-toggler">
       <li class="nav-item text-center">
         <a class="nav-link text-center" @click="logoutUser">
-            Sign Out <i class="fa fa-sign-out"></i>
+            Sign Out  <i class="fa fa-sign-out"></i>
         </a>
       </li>
   </ul>

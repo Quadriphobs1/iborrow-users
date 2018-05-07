@@ -1,13 +1,13 @@
 <template>
-<div class="container-fluid">
+<div >
   <activate-notification v-if="accountActivated" :name="name"></activate-notification>
   <router-view></router-view>
 </div>
 </template>
 <script>
-import ActivateNotification from '@/components/Borrowers/ActivateNotification'
+import ActivateNotification from '@/components/ActivateNotification'
 export default {
-  name: 'borrowers-dashboard',
+  name: 'investors-dashboard',
   components: {
     ActivateNotification
   },

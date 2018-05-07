@@ -45,7 +45,13 @@ export default [
       children: [
         { path: '', redirect: { name: 'borrowers.home' } },
         { path: 'dashboard', name: 'borrowers.home', component: require('@/pages/Home/Page').default, meta: { layout: 'borrowers' } },
-        { path: 'welcome', name: 'borrowers.main', component: require('@/pages/Main/Page').default }
+        { path: 'welcome', name: 'borrowers.main', component: require('@/pages/Main/Page').default },
+        { path: 'profile',
+          component: () => import('@/pages/Borrowers/Profile/Template'),
+          children: [
+            { path: '', name: 'borrowers.profile', component: require('@/pages/Borrowers/Profile/ProfilePage').default, meta: { layout: 'borrowers' } }
+          ]
+        }
       ]
     }
   ]),

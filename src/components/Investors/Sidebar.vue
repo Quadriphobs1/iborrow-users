@@ -43,7 +43,7 @@
           </a>
           <ul class="sidenav-second-level collapse" id="investment" data-parent="#accordion">
               <a class="dropdown-item" href="#">Create Investment Alert</a>
-              <a class="dropdown-item" href="#">Borrower Requests</a>
+              <a class="dropdown-item" href="#">Borrower's Requests</a>
               <a class="dropdown-item" href="#">My Investments</a>
           </ul>
       </li>
@@ -94,10 +94,10 @@
           </a>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Profile">
-          <a class="nav-link" >
+          <router-link :to="{name:'investors.profile'}" class="nav-link" >
               <i class="vl_user-male"></i>
               <span class="nav-link-text">My Profile </span>
-          </a>
+          </router-link>
       </li>
 
   </ul>

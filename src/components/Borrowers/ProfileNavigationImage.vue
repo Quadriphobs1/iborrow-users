@@ -1,7 +1,7 @@
 <template>
   <div class="user-thumb">
-      <img class="rounded-circle" :src="profileImge" alt="profile image" v-if="loading"/>
-      <img class="rounded-circle" src="@/assets/img/avatar/avatar1.jpg" alt="" v-else/>
+      <img class="rounded-circle" v-auth-image="profileImage" alt="profile image" v-if="loading"/>
+      <img class="rounded-circle" src="@/assets/img/avatar/avatar1.jpg" alt="Profile Image" v-else/>
       <span class="d-lg-none">{{displayName}}</span>
   </div>
 </template>
@@ -12,19 +12,17 @@
     data () {
       return {
         loading: false,
-        profileImge: null,
-        displayName: this.$store.getters['auth/user'].displayName
+        profileImage: null,
+        displayName: null
       }
     },
     methods: {
       async fetchUser () {
+        // Dispatch an action to fetch the user information in case it doesn't exist before
         await this.$store.dispatch('auth/fetchUser')
         this.displayName = this.$store.getters['auth/user'].displayName
-        const userProfileImage = this.$store.getters['auth/user'].profileImageURL
-        if (userProfileImage) {
-          this.loading = false
-          this.profileImge = `${process.env.API_URL}/${userProfileImage}`
-        }
+        this.profileImage = `${process.env.API_URL}/${this.$store.getters['auth/user'].profileImageURL}`
+        this.loading = true
       }
     },
     mounted () {
