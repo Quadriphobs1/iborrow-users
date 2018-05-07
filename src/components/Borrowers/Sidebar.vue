@@ -11,7 +11,7 @@
       </li>
 
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" data-target="#dashboard">
+          <a class="nav-link" >
               <i class="vl_dashboard"></i>
               <span class="nav-link-text">Dashboard </span>
           </a>

@@ -12,7 +12,7 @@
             <div class="modal-body">
                 <p>Please check your email address for the activation code, input the activation code below and click on activate.</p>
                 <div class="alert alert-dark" role="alert">
-                  Can't find activation code? <a href="#" class="alert-link" @click="resendCode">Resent code</a>
+                  Can't find activation code? <a href="#" class="alert-link" @click="resendCode">Resend code</a>
                 </div>
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Activation Code:</label>
@@ -76,7 +76,7 @@ export default {
             if (res.status === 200) {
               this.loading = false
               this.$toastr.s(res.data.message, 'Account activated successfully')
-              this.$router.go(this.$router.currentRoute)
+              this.$router.push({ name: 'investors.onboard.stepone' })
             }
           }).catch(function (error) {
             console.log(error)

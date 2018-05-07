@@ -3,7 +3,7 @@
     <table class="table table-hover text-left table-striped">
       <tr>
         <td>Username</td>
-        <td class="text-primary">@username</td>
+        <td class="text-primary">@{{username}}</td>
       </tr>
       <tr>
         <td>Phone Number</td>
@@ -22,7 +22,19 @@
 </template>
 
 <script>
+  import { ContentLoader } from 'vue-content-loader'
   export default {
-    name: 'personal-information'
+    name: 'personal-information',
+    components: {
+      ContentLoader
+    },
+    props: {
+      username: {
+        type: String
+      },
+      phoneNumber: {
+        type: String
+      }
+    }
   }
 </script>

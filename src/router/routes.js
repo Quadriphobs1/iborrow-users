@@ -35,6 +35,13 @@ export default [
           children: [
             { path: '', name: 'investors.profile', component: require('@/pages/Investors/Profile/ProfilePage').default, meta: { layout: 'investors' } }
           ]
+        },
+        { path: 'onboard',
+          component: () => import('@/pages/Investors/Onboard/Template'),
+          children: [
+            { path: '', redirect: { name: 'investors.onboard.stepone' } },
+            { path: '', name: 'investors.onboard.stepone', component: require('@/pages/Investors/Onboard/StepOne').default, meta: { layout: 'onboard' } }
+          ]
         }
       ]
     }
