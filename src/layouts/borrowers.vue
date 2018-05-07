@@ -22,7 +22,7 @@ export default {
   }),
   metaInfo () {
     return {
-      title: 'iBorrow',
+      title: 'Borrowers',
       titleTemplate: '%s · iBorrow',
       htmlAttrs: { lang: 'en', dir: 'ltr' },
       bodyAttrs: { class: 'fixed-nav' },

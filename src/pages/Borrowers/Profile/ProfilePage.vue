@@ -9,6 +9,11 @@
 export default {
   name: 'profile-page',
   components: {
+  },
+  metaInfo () {
+    return {
+      title: 'My Profile'
+    }
   }
 }
 </script>
