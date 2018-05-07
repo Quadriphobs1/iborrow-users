@@ -23,6 +23,7 @@ import '@/assets/icons/themify-icons/css/themify-icons.css'
 import '@/assets/icons/weather-icons/css/weather-icons.min.css'
 import '@/assets/vendors/jquery-steps/jquery.steps.css'
 import 'vue-toastr/dist/vue-toastr.css'
+import '@/assets/vendors/select2/css/select2.css'
 import '@/assets/app.css'
 
 require('bootstrap')
